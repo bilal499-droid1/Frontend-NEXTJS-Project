@@ -34,16 +34,26 @@ export default function Dashboard() {
           style={{ background: "#e8f1ff" }}
         >
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 rounded-md flex items-center justify-center relative overflow-hidden" 
-              style={{ background: 'linear-gradient(135deg, #9333ea 0%, #7956DF 100%)' }}
+            <div
+              className="w-10 h-10 rounded-md flex items-center justify-center relative overflow-hidden"
+              style={{
+                background: "linear-gradient(135deg, #9333ea 0%, #7956DF 100%)",
+              }}
             >
               <span className="text-white font-bold text-lg">C</span>
-              <span className="text-white font-bold text-lg absolute bottom-0 right-1">V</span>
+              <span className="text-white font-bold text-lg absolute bottom-0 right-1">
+                V
+              </span>
               <div className="absolute w-[1px] h-6 bg-white/70 rotate-45 left-1/2 transform -translate-x-1/2"></div>
             </div>
             <div>
-              <span className="text-gray-800 font-extrabold text-lg">Computer </span>
-              <span className="font-extrabold text-lg" style={{ color: "#7956DF" }}>
+              <span className="text-gray-800 font-extrabold text-lg">
+                Computer{" "}
+              </span>
+              <span
+                className="font-extrabold text-lg"
+                style={{ color: "#7956DF" }}
+              >
                 Vision
               </span>
             </div>

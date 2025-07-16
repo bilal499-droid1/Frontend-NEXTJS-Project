@@ -15,49 +15,90 @@ export default function LoginPage() {
     e.preventDefault();
     // Handle login logic here
     console.log("Login attempt with:", email, password);
-    
+
     // Redirect to dashboard after successful login
     router.push("/dashboard");
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden bg-gray-50"
+    <div
+      className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden bg-gray-50"
       style={{
-        background: "linear-gradient(135deg, #ffffff 0%, #f8fafc 50%, #f1f5f9 100%)"
-      }}>
+        background:
+          "linear-gradient(135deg, #ffffff 0%, #f8fafc 50%, #f1f5f9 100%)",
+      }}
+    >
       {/* Background decorative curved shapes */}
-      <div className="absolute -top-32 -left-32 w-96 h-96 opacity-60"
+      {/* Top left large curve */}
+      <div
+        className="absolute -top-32 -left-32 w-96 h-96 opacity-60"
         style={{
           background: "linear-gradient(135deg, #a855f7 0%, #9333ea 100%)",
           borderRadius: "0 0 100% 0",
-          transform: "rotate(-10deg)"
-        }}>
-      </div>
-      
-      <div className="absolute -bottom-16 -right-16 w-64 h-64 opacity-45"
+          transform: "rotate(-10deg)",
+        }}
+      ></div>
+
+      {/* Top right curve */}
+      <div
+        className="absolute -top-20 -right-20 w-80 h-80 opacity-50"
+        style={{
+          background: "linear-gradient(225deg, #c084fc 0%, #a855f7 100%)",
+          borderRadius: "0 0 0 100%",
+          transform: "rotate(15deg)",
+        }}
+      ></div>
+
+      {/* Bottom left curve */}
+      <div
+        className="absolute -bottom-24 -left-24 w-72 h-72 opacity-55"
+        style={{
+          background: "linear-gradient(45deg, #ddd6fe 0%, #c4b5fd 100%)",
+          borderRadius: "0 100% 0 0",
+          transform: "rotate(-5deg)",
+        }}
+      ></div>
+
+      {/* Bottom right curve */}
+      <div
+        className="absolute -bottom-16 -right-16 w-64 h-64 opacity-45"
         style={{
           background: "linear-gradient(315deg, #e9d5ff 0%, #ddd6fe 100%)",
           borderRadius: "100% 0 0 0",
-          transform: "rotate(20deg)"
-        }}>
-      </div>
+          transform: "rotate(20deg)",
+        }}
+      ></div>
 
-      <div className="backdrop-blur-lg rounded-3xl shadow-2xl p-8 w-full max-w-md relative z-10 border border-white/50 overflow-hidden"
-        style={{ background: "#E6E1F4" }}>
+      {/* Center floating blob */}
+      <div
+        className="absolute top-1/4 right-1/4 w-48 h-48 opacity-30 animate-pulse animation-delay-2000"
+        style={{
+          background: "radial-gradient(circle, #c084fc 0%, transparent 70%)",
+          borderRadius: "60% 40% 30% 70%",
+          transform: "rotate(45deg)",
+        }}
+      ></div>
+
+      <div
+        className="backdrop-blur-lg rounded-3xl shadow-2xl p-8 w-full max-w-md relative z-10 border border-white/50 overflow-hidden"
+        style={{ background: "#E6E1F4" }}
+      >
         {/* Purple corner shades */}
-        <div className="absolute top-0 right-0 w-32 h-32"
+        <div
+          className="absolute top-0 right-0 w-32 h-32"
           style={{
             background: "#7956DF",
-            borderRadius: "0 0 0 100%"
-          }}>
-        </div>
-        
-        <div className="absolute bottom-0 left-0 w-28 h-28"
+            borderRadius: "0 0 0 100%",
+          }}
+        ></div>
+
+        <div
+          className="absolute bottom-0 left-0 w-28 h-28"
           style={{
             background: "#7956DF",
-            borderRadius: "0 100% 0 0"
-          }}>
-        </div>
+            borderRadius: "0 100% 0 0",
+          }}
+        ></div>
 
         <div className="text-center mb-8 relative z-10">
           <h1 className="text-3xl font-bold text-gray-700 mb-2">LOG IN</h1>
@@ -67,7 +108,10 @@ export default function LoginPage() {
         <form onSubmit={handleSubmit} className="space-y-6 relative z-10">
           {/* Email Field */}
           <div>
-            <label htmlFor="email" className="block text-gray-700 text-sm font-bold mb-2">
+            <label
+              htmlFor="email"
+              className="block text-gray-700 text-sm font-bold mb-2"
+            >
               Email<span className="text-red-500">*</span>
             </label>
             <input
@@ -83,7 +127,10 @@ export default function LoginPage() {
 
           {/* Password Field */}
           <div>
-            <label htmlFor="password" className="block text-gray-700 text-sm font-bold mb-2">
+            <label
+              htmlFor="password"
+              className="block text-gray-700 text-sm font-bold mb-2"
+            >
               Password<span className="text-red-500">*</span>
             </label>
             <div className="relative">
