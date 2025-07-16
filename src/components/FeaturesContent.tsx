@@ -42,7 +42,7 @@ export default function FeaturesContent() {
           >
             <h3 className="text-xl font-bold text-gray-800 mb-3">Prompt-Based Labeling</h3>
             <p className="text-gray-700 leading-relaxed">
-              Type "find all safety helmets" and watch the system detect and label all objects instantly.
+              Type &quot;find all safety helmets&quot; and watch the system detect and label all objects instantly.
             </p>
           </div>
 
@@ -53,7 +53,7 @@ export default function FeaturesContent() {
           >
             <h3 className="text-xl font-bold text-gray-800 mb-3">AI Credit System</h3>
             <p className="text-gray-700 leading-relaxed">
-              Transparent usage with AI credits. Only pay for what you use — top up anytime.
+              Transparent usage with AI credits. Only pay for what you use &mdash; top up anytime.
             </p>
           </div>
 

@@ -56,7 +56,7 @@ export default function ServicesContent() {
           >
             <h3 className="text-xl font-bold text-gray-800 mb-3">Synthetic Image Generation</h3>
             <p className="text-gray-700 leading-relaxed">
-              Upload 1-5 seed images and generate hundreds of variations using Imagen 3 — perfect for data augmentation.
+              Upload 1-5 seed images and generate hundreds of variations using Imagen 3 &mdash; perfect for data augmentation.
             </p>
           </div>
 
