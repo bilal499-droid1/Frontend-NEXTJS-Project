@@ -1,14 +1,13 @@
-# Computer Vision Web Application
+# Next.js Project Frontend
 
-A Next.js 15 application for AI-powered computer vision tasks, including auto-labeling images and synthetic data generation.
+A modern Next.js 15 application with TypeScript, Tailwind CSS, and a responsive design.
 
 ## Features
 
 - User authentication (signup, login)
-- Dashboard interface for computer vision tasks
-- Auto-labeling with AI prompts
-- Integration with Gemini & Imagen 3
-- Data export functionality
+- Dashboard interface
+- Responsive design with Tailwind CSS
+- Modern UI components
 
 ## Technology Stack
 
