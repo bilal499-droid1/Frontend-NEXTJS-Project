@@ -112,14 +112,17 @@ export default function HomePage() {
 
           <div className="relative z-10">
             <div className="rounded-lg overflow-hidden shadow-2xl border border-gray-100">
-              <img
+              <Image
                 src="/images/hero-image.png"
                 alt="Computer Vision Demo"
+                width={600}
+                height={400}
                 className="w-full h-auto"
-                onError={(e) => {
+                onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
                   e.currentTarget.src =
                     "https://via.placeholder.com/600x400?text=Computer+Vision";
                 }}
+                priority
               />
             </div>
           </div>

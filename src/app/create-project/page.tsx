@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+// import { useState } from "react";
 import { useRouter } from "next/navigation";
 
 export default function CreateProjectPage() {
@@ -23,7 +23,7 @@ export default function CreateProjectPage() {
       </div>
       <div className="w-full max-w-xl mx-auto z-10">
         <h1 className="text-4xl font-bold mb-10 text-gray-900">
-          Let's create your <span className="text-[#7956DF]">project</span>.
+          Let&apos;s create your <span className="text-[#7956DF]">project</span>.
         </h1>
         <form className="space-y-6">
           <div>
