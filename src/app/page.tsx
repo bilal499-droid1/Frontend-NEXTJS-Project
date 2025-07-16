@@ -7,9 +7,31 @@ export default function LandingPage() {
   const router = useRouter();
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white relative overflow-hidden">
+      {/* Background Design Elements */}
+      <div 
+        className="absolute -z-10" 
+        style={{
+          top: '-10%',
+          right: '-5%',
+          width: '50%',
+          height: '50%',
+          background: 'radial-gradient(circle, rgba(121, 86, 223, 0.15) 0%, rgba(255, 255, 255, 0) 70%)'
+        }}
+      ></div>
+      <div 
+        className="absolute -z-10" 
+        style={{
+          bottom: '-15%',
+          left: '-10%',
+          width: '70%',
+          height: '70%',
+          background: 'radial-gradient(circle, rgba(121, 86, 223, 0.15) 0%, rgba(255, 255, 255, 0) 70%)'
+        }}
+      ></div>
+      
       {/* Navigation Bar */}
-      <nav className="px-6 py-4 md:px-10 lg:px-20 flex justify-between items-center border-b border-gray-100">
+      <nav className="px-6 py-4 md:px-10 lg:px-20 flex justify-between items-center border-b border-gray-100 relative z-10">
         {/* Logo */}
         <div className="flex items-center space-x-2">
           <div className="w-10 h-10 rounded-md flex items-center justify-center relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #9333ea 0%, #7956DF 100%)' }}>
@@ -50,7 +72,7 @@ export default function LandingPage() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-white py-16 px-6 md:px-10 lg:px-20">
+      <section className="relative overflow-hidden bg-transparent py-16 px-6 md:px-10 lg:px-20">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="z-10">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
@@ -91,11 +113,11 @@ export default function LandingPage() {
           </div>
           
           <div className="relative z-10">
-            <div className="rounded-lg overflow-hidden shadow-2xl border border-gray-100 bg-gray-50 p-8">
+            <div className="rounded-lg overflow-hidden shadow-2xl border border-gray-100 bg-white/80 backdrop-blur-sm p-8">
               <div className="relative w-full h-72 sm:h-80 md:h-96">
-                <div className="absolute inset-0 flex items-center justify-center bg-indigo-50 rounded-lg p-4">
+                <div className="absolute inset-0 flex items-center justify-center bg-indigo-50/70 rounded-lg p-4">
                   <div className="text-center">
-                    <div className="w-20 h-20 mx-auto bg-purple-600 rounded-full flex items-center justify-center mb-4">
+                    <div className="w-20 h-20 mx-auto bg-purple-600 rounded-full flex items-center justify-center mb-4" style={{ backgroundColor: '#7956DF' }}>
                       <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                         <circle cx="12" cy="12" r="10"></circle>
                         <line x1="12" y1="8" x2="12" y2="16"></line>
