@@ -1,13 +1,25 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Computer Vision Web Application
+
+A Next.js 15 application for AI-powered computer vision tasks, including auto-labeling images and synthetic data generation.
+
+## Features
+
+- User authentication (signup, login)
+- Dashboard interface for computer vision tasks
+- Auto-labeling with AI prompts
+- Integration with Gemini & Imagen 3
+- Data export functionality
+
+## Technology Stack
+
+- Next.js 15
+- TypeScript
+- Tailwind CSS
+- React Hooks
 
 ## Getting Started
 
 First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
 # or
 pnpm dev
 # or

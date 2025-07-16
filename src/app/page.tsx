@@ -1,103 +1,116 @@
-import Image from "next/image";
+'use client';
 
-export default function Home() {
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+
+export default function LandingPage() {
+  const router = useRouter();
+
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="min-h-screen bg-white">
+      {/* Navigation Bar */}
+      <nav className="px-6 py-4 md:px-10 lg:px-20 flex justify-between items-center border-b border-gray-100">
+        {/* Logo */}
+        <div className="flex items-center space-x-2">
+          <div className="w-10 h-10 rounded-md flex items-center justify-center relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #9333ea 0%, #7956DF 100%)' }}>
+            <span className="text-white font-bold text-lg">C</span>
+            <span className="text-white font-bold text-lg absolute bottom-0 right-1">V</span>
+            <div className="absolute w-[1px] h-6 bg-white/70 rotate-45 left-1/2 transform -translate-x-1/2"></div>
+          </div>
+          <span className="text-gray-900 font-extrabold text-lg">Computer <span style={{ color: '#7956DF' }}>Vision</span></span>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+
+        {/* Navigation Links */}
+        <div className="hidden md:flex space-x-10 text-sm">
+          <Link href="/" className="text-indigo-600 font-bold">
+            Home
+          </Link>
+          <Link href="/services" className="text-gray-800 font-bold hover:text-indigo-600 transition-colors">
+            Services
+          </Link>
+          <Link href="/features" className="text-gray-800 font-bold hover:text-indigo-600 transition-colors">
+            Features
+          </Link>
+          <Link href="/pricing" className="text-gray-800 font-bold hover:text-indigo-600 transition-colors">
+            Pricing
+          </Link>
+          <Link href="/docs" className="text-gray-800 font-bold hover:text-indigo-600 transition-colors">
+            Docs
+          </Link>
+        </div>
+
+        {/* Register Button */}
+        <button
+          onClick={() => router.push('/login')}
+          className="bg-indigo-600 text-white px-6 py-2 rounded-md text-sm font-semibold hover:bg-indigo-700 transition-colors"
+          style={{ backgroundColor: '#7956DF' }}
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          Register
+        </button>
+      </nav>
+
+      {/* Hero Section */}
+      <section className="relative overflow-hidden bg-white py-16 px-6 md:px-10 lg:px-20">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="z-10">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+              Auto-Label. Generate. Export. <span className="block">Done.</span>
+            </h1>
+            
+            <p className="text-xl mb-3 font-bold text-gray-900">
+              Smartest Datasets <span style={{ color: '#7956DF' }} className="font-bold">Start Here</span>
+            </p>
+            
+            <p className="text-gray-900 font-bold mb-4">
+              Auto-label images using AI prompts. Generate synthetic data with
+            </p>
+            
+            <p className="text-2xl font-bold mb-4" style={{ color: '#7956DF' }}>
+              Gemini & Imagen 3.
+            </p>
+            
+            <p className="text-gray-900 font-bold mb-8">
+              Export datasets instantly.
+            </p>
+            
+            <div className="flex space-x-4">
+              <button
+                onClick={() => router.push('/login')}
+                className="bg-indigo-600 text-white px-6 py-3 rounded-md text-sm font-semibold hover:bg-indigo-700 transition-colors"
+                style={{ backgroundColor: '#7956DF' }}
+              >
+                Get Started
+              </button>
+              
+              <button
+                className="border border-gray-300 text-gray-700 px-6 py-3 rounded-md text-sm font-semibold hover:bg-gray-50 transition-colors"
+              >
+                Watch Demo
+              </button>
+            </div>
+          </div>
+          
+          <div className="relative z-10">
+            <div className="rounded-lg overflow-hidden shadow-2xl border border-gray-100 bg-gray-50 p-8">
+              <div className="relative w-full h-72 sm:h-80 md:h-96">
+                <div className="absolute inset-0 flex items-center justify-center bg-indigo-50 rounded-lg p-4">
+                  <div className="text-center">
+                    <div className="w-20 h-20 mx-auto bg-purple-600 rounded-full flex items-center justify-center mb-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="16"></line>
+                        <line x1="8" y1="12" x2="16" y2="12"></line>
+                      </svg>
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-800">AI-Powered Computer Vision</h3>
+                    <p className="text-gray-600 mt-2">Label, annotate, and generate data with our platform</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
