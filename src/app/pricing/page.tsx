@@ -1,10 +1,10 @@
 "use client";
 
-import React from 'react';
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
-import PricingContent from '@/components/PricingContent';
-import Footer from '@/components/Footer';
+import React from "react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import PricingContent from "@/components/PricingContent";
+import Footer from "@/components/Footer";
 
 export default function PricingPage() {
   const router = useRouter();
@@ -44,7 +44,10 @@ export default function PricingPage() {
 
         {/* Navigation Links */}
         <div className="hidden md:flex space-x-10 text-sm">
-          <Link href="/" className="text-gray-800 font-bold hover:text-indigo-600 transition-colors">
+          <Link
+            href="/"
+            className="text-gray-800 font-bold hover:text-indigo-600 transition-colors"
+          >
             Home
           </Link>
           <Link
@@ -59,10 +62,7 @@ export default function PricingPage() {
           >
             Features
           </Link>
-          <Link
-            href="/pricing"
-            className="text-indigo-600 font-bold"
-          >
+          <Link href="/pricing" className="text-indigo-600 font-bold">
             Pricing
           </Link>
         </div>
@@ -79,7 +79,7 @@ export default function PricingPage() {
 
       {/* Pricing Content */}
       <PricingContent />
-      
+
       {/* Footer */}
       <Footer />
     </div>

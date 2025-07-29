@@ -1,9 +1,9 @@
 "use client";
 
-import React from 'react';
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
-import FeaturesContent from '@/components/FeaturesContent';
+import React from "react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import FeaturesContent from "@/components/FeaturesContent";
 
 export default function FeaturesPage() {
   const router = useRouter();
@@ -43,7 +43,10 @@ export default function FeaturesPage() {
 
         {/* Navigation Links */}
         <div className="hidden md:flex space-x-10 text-sm">
-          <Link href="/" className="text-gray-800 font-bold hover:text-indigo-600 transition-colors">
+          <Link
+            href="/"
+            className="text-gray-800 font-bold hover:text-indigo-600 transition-colors"
+          >
             Home
           </Link>
           <Link
@@ -52,10 +55,7 @@ export default function FeaturesPage() {
           >
             Services
           </Link>
-          <Link
-            href="/features"
-            className="text-indigo-600 font-bold"
-          >
+          <Link href="/features" className="text-indigo-600 font-bold">
             Features
           </Link>
           <Link

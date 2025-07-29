@@ -1,9 +1,9 @@
 "use client";
 
-import React from 'react';
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
-import ServicesContent from '@/components/ServicesContent';
+import React from "react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import ServicesContent from "@/components/ServicesContent";
 
 export default function ServicesPage() {
   const router = useRouter();
@@ -44,13 +44,13 @@ export default function ServicesPage() {
 
         {/* Navigation Links */}
         <div className="hidden md:flex space-x-10 text-sm">
-          <Link href="/" className="text-gray-800 font-bold hover:text-indigo-600 transition-colors">
+          <Link
+            href="/"
+            className="text-gray-800 font-bold hover:text-indigo-600 transition-colors"
+          >
             Home
           </Link>
-          <Link
-            href="/services"
-            className="text-indigo-600 font-bold"
-          >
+          <Link href="/services" className="text-indigo-600 font-bold">
             Services
           </Link>
           <Link

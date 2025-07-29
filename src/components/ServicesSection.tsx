@@ -2,13 +2,13 @@
 
 import React from "react";
 
-export default function ServicesContent() {
+export default function ServicesSection() {
   return (
     <section
       id="services"
       className="py-20 px-6 md:px-10 lg:px-20 bg-white relative overflow-hidden"
     >
-      {/* Background Design Elements */}
+      {/* Large curved shape on left side */}
       <div
         className="absolute -z-10 left-0 top-1/2 transform -translate-y-1/2"
         style={{
@@ -80,7 +80,7 @@ export default function ServicesContent() {
             </h3>
             <p className="text-gray-700 leading-relaxed">
               Upload 1-5 seed images and generate hundreds of variations using
-              Imagen 3 &mdash; perfect for data augmentation.
+              Imagen 3 — perfect for data augmentation.
             </p>
           </div>
 

@@ -1,7 +1,7 @@
 "use client";
 
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -14,7 +14,8 @@ export default function Footer() {
               <div
                 className="w-10 h-10 rounded-md flex items-center justify-center relative overflow-hidden"
                 style={{
-                  background: "linear-gradient(135deg, #9333ea 0%, #7956DF 100%)",
+                  background:
+                    "linear-gradient(135deg, #9333ea 0%, #7956DF 100%)",
                 }}
               >
                 <span className="text-white font-bold text-lg">C</span>
@@ -31,17 +32,26 @@ export default function Footer() {
             <h3 className="text-sm font-semibold mb-4">Quick Links</h3>
             <div className="space-y-2">
               <div>
-                <Link href="/" className="text-gray-300 hover:text-white text-sm transition-colors">
+                <Link
+                  href="/"
+                  className="text-gray-300 hover:text-white text-sm transition-colors"
+                >
                   Home
                 </Link>
               </div>
               <div>
-                <Link href="/pricing" className="text-gray-300 hover:text-white text-sm transition-colors">
+                <Link
+                  href="/pricing"
+                  className="text-gray-300 hover:text-white text-sm transition-colors"
+                >
                   Pricing
                 </Link>
               </div>
               <div>
-                <Link href="/features" className="text-gray-300 hover:text-white text-sm transition-colors">
+                <Link
+                  href="/features"
+                  className="text-gray-300 hover:text-white text-sm transition-colors"
+                >
                   Features
                 </Link>
               </div>
@@ -53,22 +63,34 @@ export default function Footer() {
             <h3 className="text-sm font-semibold mb-4">Company</h3>
             <div className="space-y-2">
               <div>
-                <Link href="#" className="text-gray-300 hover:text-white text-sm transition-colors">
+                <Link
+                  href="#"
+                  className="text-gray-300 hover:text-white text-sm transition-colors"
+                >
                   About Us
                 </Link>
               </div>
               <div>
-                <Link href="#" className="text-gray-300 hover:text-white text-sm transition-colors">
+                <Link
+                  href="#"
+                  className="text-gray-300 hover:text-white text-sm transition-colors"
+                >
                   Contact
                 </Link>
               </div>
               <div>
-                <Link href="#" className="text-gray-300 hover:text-white text-sm transition-colors">
+                <Link
+                  href="#"
+                  className="text-gray-300 hover:text-white text-sm transition-colors"
+                >
                   Careers
                 </Link>
               </div>
               <div>
-                <Link href="#" className="text-gray-300 hover:text-white text-sm transition-colors">
+                <Link
+                  href="#"
+                  className="text-gray-300 hover:text-white text-sm transition-colors"
+                >
                   Partners
                 </Link>
               </div>
@@ -80,22 +102,34 @@ export default function Footer() {
             <h3 className="text-sm font-semibold mb-4">Legal Section</h3>
             <div className="space-y-2">
               <div>
-                <Link href="#" className="text-gray-300 hover:text-white text-sm transition-colors">
+                <Link
+                  href="#"
+                  className="text-gray-300 hover:text-white text-sm transition-colors"
+                >
                   Terms of Service
                 </Link>
               </div>
               <div>
-                <Link href="#" className="text-gray-300 hover:text-white text-sm transition-colors">
+                <Link
+                  href="#"
+                  className="text-gray-300 hover:text-white text-sm transition-colors"
+                >
                   Privacy Policy
                 </Link>
               </div>
               <div>
-                <Link href="#" className="text-gray-300 hover:text-white text-sm transition-colors">
+                <Link
+                  href="#"
+                  className="text-gray-300 hover:text-white text-sm transition-colors"
+                >
                   Refund Policy
                 </Link>
               </div>
               <div>
-                <Link href="#" className="text-gray-300 hover:text-white text-sm transition-colors">
+                <Link
+                  href="#"
+                  className="text-gray-300 hover:text-white text-sm transition-colors"
+                >
                   Cookie Policy
                 </Link>
               </div>
@@ -106,22 +140,35 @@ export default function Footer() {
         {/* Bottom bar with copyright and social links */}
         <div className="border-t border-gray-700 mt-8 pt-6 flex flex-col md:flex-row items-center justify-between">
           <div className="text-sm text-gray-400">
-            &copy; {new Date().getFullYear()} Computer Vision. All rights reserved.
+            &copy; {new Date().getFullYear()} Computer Vision. All rights
+            reserved.
           </div>
           <div className="flex items-center space-x-4 mt-4 md:mt-0">
-            <Link href="#" className="text-sm text-gray-400 hover:text-white transition-colors">
+            <Link
+              href="#"
+              className="text-sm text-gray-400 hover:text-white transition-colors"
+            >
               Privacy
             </Link>
             <span className="text-gray-600">|</span>
-            <Link href="#" className="text-sm text-gray-400 hover:text-white transition-colors">
+            <Link
+              href="#"
+              className="text-sm text-gray-400 hover:text-white transition-colors"
+            >
               Terms
             </Link>
             <span className="text-gray-600">|</span>
-            <Link href="#" className="text-sm text-gray-400 hover:text-white transition-colors">
+            <Link
+              href="#"
+              className="text-sm text-gray-400 hover:text-white transition-colors"
+            >
               LinkedIn
             </Link>
             <span className="text-gray-600">|</span>
-            <Link href="#" className="text-sm text-gray-400 hover:text-white transition-colors">
+            <Link
+              href="#"
+              className="text-sm text-gray-400 hover:text-white transition-colors"
+            >
               GitHub
             </Link>
           </div>
